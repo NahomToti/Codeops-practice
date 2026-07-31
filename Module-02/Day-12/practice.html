@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traditional Ethiopian Restaurant | Book a Table & Menu</title>
+    <meta
+      name="description"
+      content="Experience authentic Ethiopian cuisine. Book your table online and view our traditional food menu featuring Injera, Doro Wat, and Beyaynetu in Addis Ababa."
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          sans-serif;
+        line-height: 1.6;
+        color: #222;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: #fcfbf9;
+      }
+      header,
+      section,
+      footer {
+        margin-bottom: 2.5rem;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #8b0000;
+        margin-top: 0;
+      }
+
+      .hero-container img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      form {
+        background: #ffffff;
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      .form-group {
+        margin-bottom: 1.25rem;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+      }
+      input {
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input:focus,
+      button:focus {
+        outline: 3px solid #005fcc;
+        outline-offset: 2px;
+      }
+      button[type="submit"] {
+        background-color: #8b0000;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #660000;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #ffffff;
+        margin-top: 1rem;
+      }
+      caption {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+      }
+      th,
+      td {
+        padding: 0.75rem;
+        text-align: left;
+        border: 1px solid #ddd;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+
+      .map-container iframe {
+        width: 100%;
+        height: 350px;
+        border: 0;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Habesha Delights Restaurant</h1>
+      <p>Authentic Ethiopian Culinary Experience in Addis Ababa</p>
+    </header>
+
+    <main>
+      <section class="hero-container" aria-label="Featured dish photo">
+        <img
+          src="./image/Doro wot.webp"
+          alt="A vibrant traditional Ethiopian Beyaynetu platter served on fresh injera with assorted spiced stews"
+          loading="lazy"
+          width="1200"
+          height="600"
+        />
+      </section>
+
+      <section id="reservation">
+        <h2>Reserve Your Table</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full_name"
+              required
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Phone Number (Format: 09xxxxxxxx)</label>
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              pattern="09[0-9]{8}"
+              required
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests (1 to 20)</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              max="20"
+              value="2"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="res-date">Reservation Date</label>
+            <input type="date" id="res-date" name="res_date" required />
+          </div>
+
+          <button type="submit">Complete Reservation</button>
+        </form>
+      </section>
+
+      <section id="menu">
+        <h2>Our Traditional Menu</h2>
+        <table>
+          <caption>
+            Selection of Popular Ethiopian Dishes
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Dish Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Price (ETB)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Doro Wot</th>
+              <td>
+                Slow-cooked spiced chicken stew served with boiled egg and fresh
+                Injera
+              </td>
+              <td>450 ETB</td>
+            </tr>
+            <tr>
+              <th scope="row">Special Beyaynetu</th>
+              <td>Assorted vegetarian stews served over flatbread Injera</td>
+              <td>350 ETB</td>
+            </tr>
+            <tr>
+              <th scope="row">Beef Tibs</th>
+              <td>Sautéed beef strips with onions, garlic, and rosemary</td>
+              <td>400 ETB</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="location">
+        <h2>Find Our Location</h2>
+        <div class="map-container">
+          <iframe
+            title="Google Map showing the location of Habesha Delights Restaurant in Addis Ababa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63048.03716942006!2d38.721262!3d9.0107934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+  
+  </body>
+</html>
