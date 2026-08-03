@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Traditional Ethiopian Restaurant | Book a Table & Menu</title>
+
+    <meta
+      name="description"
+      content="Experience authentic Ethiopian cuisine. Book your table online and view our traditional food menu."
+    />
+
+    <link rel="stylesheet" href="styleP.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Habesha Delights Restaurant</h1>
+      <p>Authentic Ethiopian Culinary Experience in Addis Ababa</p>
+    </header>
+
+    <main>
+      <section class="hero-container">
+        <img
+          src="./image/Doro wot.webp"
+          alt="Doro Wot - Traditional Ethiopian Chicken Stew"
+        />
+      </section>
+
+      <section id="reservation">
+        <h2>Reserve Your Table</h2>
+
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+
+            <input type="text" id="full-name" name="full_name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Phone Number</label>
+
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              pattern="09[0-9]{8}"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              max="20"
+              value="2"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="res-date">Reservation Date</label>
+
+            <input type="date" id="res-date" name="res_date" required />
+          </div>
+
+          <button type="submit">Complete Reservation</button>
+        </form>
+      </section>
+
+      <section id="menu">
+        <h2>Our Traditional Menu</h2>
+
+        <table>
+          <caption>
+            Selection of Popular Ethiopian Dishes
+          </caption>
+
+          <thead>
+            <tr>
+              <th>Dish Name</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>Doro Wot</th>
+              <td>Slow-cooked spiced chicken stew served with fresh Injera.</td>
+              <td>450</td>
+            </tr>
+
+            <tr>
+              <th>Special Beyaynetu</th>
+              <td>Assorted vegetarian stews served on Injera.</td>
+              <td>350</td>
+            </tr>
+
+            <tr>
+              <th>Beef Tibs</th>
+              <td>Sautéed beef strips with onions, garlic and rosemary.</td>
+              <td>400</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="ingredients">
+        <h2>Main Ingredients</h2>
+
+        <ul class="ingredient-list">
+          <li>Chicken</li>
+          <li>Boiled Eggs</li>
+          <li>Berbere Spice</li>
+          <li>Onion</li>
+          <li>Garlic</li>
+          <li>Fresh Injera</li>
+        </ul>
+      </section>
+
+      <section id="location">
+        <h2>Find Our Location</h2>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63048.03716942006!2d38.721262!3d9.0107934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+            title="Restaurant Location"
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
