@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color:gray;
+    margin-inline: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box{
+    background-color:lightgray;
+    border: 2px solid black;
+    height: 250px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.item1{
+    /* background-image: url('./images/images.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .container{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+        margin-inline: 5%;
+}
+}
+
+    .item1{
+        display: flex;
+         /*background-image: url(./image/Lambocar.jpg); 
+    }*/
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container{
+    width: 500px;
+    border: 2px solid black;
+    background-color: blue;
+    transition: background 2000ms ease, transform 2000ms ease;
+    opacity: 0;
+    margin: 20px auto;
+}
+
+.container:hover{
+    transform: scale(1.1);
+    animation: fadeIn 2000ms ease;
+}

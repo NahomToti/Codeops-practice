@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habesha Delights Restaurant</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body class="page">
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="./image/logo.png" alt="Habesha Delights Logo">
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYpOpSNi-3pUsSfhqiodRRZCB6nTkOYvpvMs-GKXjA8g&s=10" alt="Traditional Ethiopian Doro Wot">
+        </section>
+
+        <section id="reservation">
+
+            <h2>Reserve Your Table</h2>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+251..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <input type="number" id="guests" min="1" value="2">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Reservation Date</label>
+                    <input type="date" id="date">
+                </div>
+
+                <button type="submit">Book Table</button>
+
+            </form>
+
+        </section>
+
+        <section id="menu">
+
+            <h2>Popular Dishes</h2>
+
+            <div class="menu-grid">
+
+                <article class="card">
+
+                    <span class="badge">Popular</span>
+
+                    <h3>Doro Wot</h3>
+
+                    <p>Slow-cooked spicy chicken stew served with fresh Injera.</p>
+
+                    <div class="price">450 ETB</div>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Special Beyaynetu</h3>
+
+                    <p>Ethiopian vegetarian platter served with fresh Injera.</p>
+
+                    <div class="price">350 ETB</div>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Beef Tibs</h3>
+
+                    <p>Tender sautéed beef with garlic, onion and rosemary.</p>
+
+                    <div class="price">400 ETB</div>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Kitfo</h3>
+
+                    <p>Finely minced seasoned beef served with homemade cheese.</p>
+
+                    <div class="price">480 ETB</div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="ingredients">
+
+            <h2>Main Ingredients</h2>
+
+            <ul>
+                <li>Fresh Injera</li>
+                <li>Chicken</li>
+                <li>Berbere Spice</li>
+                <li>Garlic</li>
+                <li>Onion</li>
+            </ul>
+
+        </section>
+
+        <section id="location">
+
+            <h2>Visit Us</h2>
+
+            <iframe
+                src="https://www.google.com/maps?q=Addis+Ababa,Ethiopia&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Habesha Delights Restaurant. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
