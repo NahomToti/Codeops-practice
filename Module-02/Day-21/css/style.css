@@ -1,0 +1,21 @@
+ body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: #222;
+    color: white;
+}
+
+#logo {
+    padding: 8px 15px;
+    cursor: pointer;
+} 

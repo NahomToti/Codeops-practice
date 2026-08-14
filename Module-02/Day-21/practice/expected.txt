@@ -1,0 +1,5 @@
+1. The form contains a name input.
+2. The form contains a phone input.
+3. The form contains a submit button.
+4. The form contains an error area.
+5. Form submission does not reload the page.
