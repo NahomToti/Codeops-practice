@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#status {
+    padding: 10px;
+}
+
+#error {
+    color: red;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#watchlist {
+    padding: 0;
+}
+
+#watchlist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 5px;
+}
+
+#watchlist button {
+    padding: 5px 10px;
+}
+
+.loading {
+    color: #555;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.empty {
+    color: #777;
+}
