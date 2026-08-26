@@ -1,0 +1,36 @@
+.menu-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 8px;
+
+  width: 100%;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .menu-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* SMALL TABLET */
+
+@media (max-width: 750px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* PHONE */
+
+@media (max-width: 500px) {
+  .menu-container {
+    grid-template-columns: 1fr;
+  }
+}

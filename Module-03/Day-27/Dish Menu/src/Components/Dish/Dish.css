@@ -1,0 +1,151 @@
+.dish-card {
+  height: 330px;
+
+  background-color: #d7ff32;
+
+  border: 4px solid #45c936;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.25s ease;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+
+/* HOVER EFFECT */
+
+.dish-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #168b25;
+
+  box-shadow: 0 10px 20px rgba(0, 80, 0, 0.25);
+}
+
+
+/* IMAGE */
+
+.dish-image {
+  width: 100%;
+  height: 155px;
+
+  overflow: hidden;
+
+  background-color: #cfff20;
+}
+
+.dish-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.3s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.dish-card:hover .dish-image img {
+  transform: scale(1.06);
+}
+
+
+/* INFORMATION */
+
+.dish-info {
+  flex: 1;
+
+  padding: 10px 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #d7ff32;
+}
+
+
+.dish-info h3 {
+  margin: 0 0 6px;
+
+  font-size: 20px;
+
+  color: #245c20;
+
+  font-weight: bold;
+}
+
+
+/* DESCRIPTION */
+
+.dish-description {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.35;
+
+  color: #315d27;
+
+  flex: 1;
+}
+
+
+/* PRICE + BUTTON */
+
+.dish-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 8px;
+}
+
+
+.dish-price {
+  font-size: 18px;
+
+  font-weight: bold;
+
+  color: #17651e;
+}
+
+
+/* BUTTON */
+
+.dish-bottom button {
+  border: none;
+
+  background-color: #36b52f;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  padding: 8px 14px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.dish-bottom button:hover {
+  background-color: #168b25;
+
+  transform: scale(1.05);
+}

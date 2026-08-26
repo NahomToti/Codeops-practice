@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Doro Wat",
+    "description": "Spicy chicken stew with berbere, onions and boiled egg.",
+    "price": 350,
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Injera%20and%20doro%20wat.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tibs",
+    "description": "Sautéed beef with onions, peppers and aromatic Ethiopian spices.",
+    "price": 320,
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tibs.JPG"
+  },
+  {
+    "id": 3,
+    "name": "Kitfo",
+    "description": "Minced beef seasoned with mitmita and Ethiopian spiced butter.",
+    "price": 380,
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kitfo%20%28Ethiopian%20Tartar%29.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Shiro Wat",
+    "description": "Smooth chickpea stew cooked with berbere and traditional spices.",
+    "price": 250,
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ethiopian%20%27Shiro%27.JPG"
+  },
+  {
+    "id": 5,
+    "name": "Gomen Wat",
+    "description": "Collard greens cooked with garlic, ginger and Ethiopian spices.",
+    "price": 230,
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Habesha%20gomen%20in%20Ethiopian%20garden.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Kik Alicha",
+    "description": "Mild yellow split-pea stew cooked with turmeric and spices.",
+    "price": 220,
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/KIK%20ALICHA%2C%20MISIR%2C%20GOMEN%20and%20TIKIL%20GOMEN.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Beyaynetu",
+    "description": "A colorful combination of Ethiopian vegetarian dishes served on injera.",
+    "price": 300,
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beyaynetu%20ethiopian%20food.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Injera",
+    "description": "Traditional Ethiopian sourdough flatbread made from teff flour.",
+    "price": 50,
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Injera%2C%20Ethiopian%27s%20traditional%20food.JPG"
+  }
+]

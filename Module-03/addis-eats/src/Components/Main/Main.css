@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  min-height: 500px;
+}
+
+.products {
+  flex: 1;
+  padding: 30px;
+}
+
+.products h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: auto;
+    min-height: auto;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
