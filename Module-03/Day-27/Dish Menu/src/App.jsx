@@ -1,14 +1,21 @@
 import Header from "./Components/Header/Header";
-import Main from "./Components/Main/Main";
-import "./App.css";
+import Footer from "./Components/Footer/Footer";
+import Sidebar from "./Components/Sidebar/Sidebar";
+import Menu from "./Components/Main/Menu/Menu";
 
-function App() {
-  return (
-    <div className="app">
-      <Header />
-      <Main />
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <Header />
+
+            <div className="main">
+                <Sidebar />
+                <Menu />
+            </div>
+
+            <Footer />
+        </div>
+    );
+};
 
 export default App;

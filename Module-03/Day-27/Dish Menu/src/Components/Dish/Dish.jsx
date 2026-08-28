@@ -1,37 +1,52 @@
+import { useState } from "react";
 import "./Dish.css";
 
-function Dish({ name, description, price, image }) {
-  return (
-    <div className="dish-card">
+const Dish = ({ name, description, price, image, spicy }) => {
+    const [count, setCount] = useState(0);
 
-      <div className="dish-image">
-        <img src={image} alt={name} />
-      </div>
+    const handleClick = () => {
+        setCount(count + 1);
+    };
 
-      <div className="dish-info">
+    return (
+        <div className="dish">
 
-        <h3>{name}</h3>
+            <img src={image} alt={name} />
 
-        <p className="dish-description">
-          {description}
-        </p>
+            <div className="dish-info">
 
-        <div className="dish-bottom">
+                <div className="dish-title">
+                    <h2>{name}</h2>
 
-          <span className="dish-price">
-            {price} ETB
-          </span>
+                    {spicy && (
+                        <span className="spicy">
+                            🌶️ Spicy
+                        </span>
+                    )}
+                </div>
 
-          <button>
-            Add
-          </button>
+                <p>{description}</p>
+
+                <div className="dish-bottom">
+
+                    <h3>{price} ETB</h3>
+
+                    <button onClick={handleClick}>
+                        Add
+                    </button>
+
+                </div>
+
+                {count > 0 && (
+                    <p className="count">
+                        Added: {count}
+                    </p>
+                )}
+
+            </div>
 
         </div>
-
-      </div>
-
-    </div>
-  );
-}
+    );
+};
 
 export default Dish;

@@ -1,58 +1,101 @@
 [
-  {
-    "id": 1,
-    "name": "Doro Wat",
-    "description": "Spicy chicken stew with berbere, onions and boiled egg.",
-    "price": 350,
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Injera%20and%20doro%20wat.jpg"
-  },
-  {
-    "id": 2,
-    "name": "Tibs",
-    "description": "Sautéed beef with onions, peppers and aromatic Ethiopian spices.",
-    "price": 320,
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tibs.JPG"
-  },
-  {
-    "id": 3,
-    "name": "Kitfo",
-    "description": "Minced beef seasoned with mitmita and Ethiopian spiced butter.",
-    "price": 380,
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kitfo%20%28Ethiopian%20Tartar%29.jpg"
-  },
-  {
-    "id": 4,
-    "name": "Shiro Wat",
-    "description": "Smooth chickpea stew cooked with berbere and traditional spices.",
-    "price": 250,
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ethiopian%20%27Shiro%27.JPG"
-  },
-  {
-    "id": 5,
-    "name": "Gomen Wat",
-    "description": "Collard greens cooked with garlic, ginger and Ethiopian spices.",
-    "price": 230,
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Habesha%20gomen%20in%20Ethiopian%20garden.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Kik Alicha",
-    "description": "Mild yellow split-pea stew cooked with turmeric and spices.",
-    "price": 220,
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/KIK%20ALICHA%2C%20MISIR%2C%20GOMEN%20and%20TIKIL%20GOMEN.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Beyaynetu",
-    "description": "A colorful combination of Ethiopian vegetarian dishes served on injera.",
-    "price": 300,
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beyaynetu%20ethiopian%20food.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Injera",
-    "description": "Traditional Ethiopian sourdough flatbread made from teff flour.",
-    "price": 50,
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Injera%2C%20Ethiopian%27s%20traditional%20food.JPG"
-  }
+    {
+        "id": 1,
+        "name": "Doro Wat",
+        "description": "Spicy Ethiopian chicken stew made with berbere, onions and boiled egg.",
+        "price": 350,
+        "category": "meat",
+        "spicy": true,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ethiopian%20wat.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Kitfo",
+        "description": "Minced beef seasoned with mitmita and Ethiopian spiced butter.",
+        "price": 380,
+        "category": "meat",
+        "spicy": true,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kitfo%20%28%E1%8A%AD%E1%89%B5%E1%8D%8E%29.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Tibs",
+        "description": "Sautéed beef with onions, peppers and traditional Ethiopian spices.",
+        "price": 320,
+        "category": "meat",
+        "spicy": true,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tibs%201.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Shiro",
+        "description": "Smooth chickpea stew prepared with garlic, onions and Ethiopian spices.",
+        "price": 250,
+        "category": "vegetarian",
+        "spicy": true,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%27Shiro%27.JPG"
+    },
+    {
+        "id": 5,
+        "name": "Gomen",
+        "description": "Ethiopian collard greens cooked with garlic, onions and mild spices.",
+        "price": 180,
+        "category": "vegetarian",
+        "spicy": false,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ayib%20and%20gomen.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Injera",
+        "description": "Traditional Ethiopian fermented flatbread made mainly from teff flour.",
+        "price": 80,
+        "category": "vegetarian",
+        "spicy": false,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Injera.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Ayib",
+        "description": "Traditional Ethiopian fresh cheese served with many Ethiopian dishes.",
+        "price": 150,
+        "category": "vegetarian",
+        "spicy": false,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kitfo%2C%20Ayib%20and%20Injera.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Ethiopian Coffee",
+        "description": "Freshly roasted Ethiopian coffee prepared in the traditional buna ceremony.",
+        "price": 100,
+        "category": "drinks",
+        "spicy": false,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Buna%20%28Ethiopian%20coffee%29.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Tea",
+        "description": "Hot Ethiopian-style tea served with traditional spices.",
+        "price": 70,
+        "category": "drinks",
+        "spicy": false,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tosigntea.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Tej",
+        "description": "Traditional Ethiopian honey wine made from honey and water.",
+        "price": 250,
+        "category": "drinks",
+        "spicy": false,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20glass%20of%20Ethiopian%20mead%20%28tej%29.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Tella",
+        "description": "Traditional Ethiopian fermented drink commonly prepared for celebrations.",
+        "price": 180,
+        "category": "drinks",
+        "spicy": false,
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/How%20to%20make%20%22Tella%22%2C%20an%20Ethiopian%20drink.JPG"
+    }
 ]

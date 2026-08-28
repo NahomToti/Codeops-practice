@@ -1,36 +1,39 @@
-.menu-container {
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 8px;
-
-  width: 100%;
+.menu {
+    padding: 20px;
 }
 
-
-/* TABLET */
-
-@media (max-width: 1000px) {
-  .menu-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.menu h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-
-/* SMALL TABLET */
-
-@media (max-width: 750px) {
-  .menu-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
 }
 
+.categories button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-/* PHONE */
+.categories button:hover {
+    background-color: #555;
+}
 
-@media (max-width: 500px) {
-  .menu-container {
-    grid-template-columns: 1fr;
-  }
+.categories button.active {
+    background-color: #2caf35;
+}
+
+.dish-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
