@@ -1,13 +1,6 @@
-import { useState } from "react";
 import "./Dish.css";
 
-const Dish = ({ name, description, price, image, spicy }) => {
-    const [count, setCount] = useState(0);
-
-    const handleClick = () => {
-        setCount(count + 1);
-    };
-
+const Dish = ({ name, description, price, image, spicy, count, onAdd }) => {
     return (
         <div className="dish">
 
@@ -31,7 +24,7 @@ const Dish = ({ name, description, price, image, spicy }) => {
 
                     <h3>{price} ETB</h3>
 
-                    <button onClick={handleClick}>
+                    <button onClick={onAdd}>
                         Add
                     </button>
 
