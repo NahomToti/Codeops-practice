@@ -1,19 +1,16 @@
 .main {
-  display: flex;
-
-  min-height: calc(100vh - 60px);
-
-  background-color: #00e83f;
+    display: flex;
+    min-height: calc(100vh - 60px);
+    background-color: #00e83f;
 }
 
 .content {
-  flex: 1;
-
-  padding: 8px;
-
-  background-color: #00e83f;
+    flex: 1;
+    min-width: 0;
+    padding: 8px;
+    background-color: #00e83f;
 }
 
 .content-header {
-  display: none;
+    display: none;
 }

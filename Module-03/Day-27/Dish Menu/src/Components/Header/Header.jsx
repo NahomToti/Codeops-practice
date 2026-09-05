@@ -1,18 +1,16 @@
-import "./Header.css";
+import { useContext } from "react";
+import { CartContext } from "../../cart/CartProvider";
 
-function Header() {
+export default function Header() {
+  const { itemCount } = useContext(CartContext);
+
   return (
     <header className="header">
-      <h1>🇪🇹 Ethiopian Dish Menu</h1>
+      <h1>🍴 Addis Eats</h1>
 
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
+      <div className="cart-badge">
+        🛒 Cart: {itemCount}
+      </div>
     </header>
   );
 }
-
-export default Header;

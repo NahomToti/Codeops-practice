@@ -1,19 +1,30 @@
 .dish {
+    width: 100%;
+    height: 100%;
     background-color: #c8ff00;
     border: 4px solid #20b42c;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .dish img {
     width: 100%;
-    height: 200px;
+    height: 160px;
     object-fit: cover;
+    object-position: center;
     display: block;
+    flex-shrink: 0;
 }
 
 .dish-info {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-sizing: border-box;
 }
 
 .dish-title {
@@ -25,7 +36,7 @@
 
 .dish-title h2 {
     margin: 0;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .spicy {
@@ -33,35 +44,37 @@
     color: white;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     white-space: nowrap;
 }
 
 .dish-info p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.4;
+    margin: 10px 0;
 }
 
 .dish-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 25px;
+    margin-top: auto;
+    padding-top: 15px;
 }
 
 .dish-bottom h3 {
     margin: 0;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .dish-bottom button {
     background-color: #2caf35;
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 9px 15px;
     border-radius: 6px;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
 }

@@ -1,34 +1,36 @@
 import { useState } from "react";
+
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Menu from "./Components/Main/Menu/Menu";
+import Checkout from "./Components/Checkout/Checkout";
+
 import "./App.css";
 
 const App = () => {
-    const [category, setCategory] = useState("all");
-    const [cart, setCart] = useState({});
+  const [category, setCategory] = useState("all");
 
-    return (
-        <div className="app">
-            <Header />
+  return (
+    <div className="app">
+      <Header />
 
-            <div className="main">
-                <Sidebar
-                    category={category}
-                    setCategory={setCategory}
-                />
+      <div className="main">
+        <Sidebar
+          category={category}
+          setCategory={setCategory}
+        />
 
-                <Menu
-                    category={category}
-                    cart={cart}
-                    setCart={setCart}
-                />
-            </div>
+        <main>
+          <Menu category={category} />
+        </main>
 
-            <Footer />
-        </div>
-    );
+        <Checkout />
+      </div>
+
+      <Footer />
+    </div>
+  );
 };
 
 export default App;

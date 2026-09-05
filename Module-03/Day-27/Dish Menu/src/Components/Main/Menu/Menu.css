@@ -1,119 +1,17 @@
 .menu {
-    flex: 1;
-    min-width: 0;
-    padding: 35px;
-    background: #f8f1df;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.menu-header {
-    text-align: center;
-    margin-bottom: 35px;
+.menu h2 {
+    margin: 0 0 20px;
 }
 
-.menu-label {
-    margin: 0 0 8px;
-    color: #b8860b;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.menu h1 {
-    margin: 0;
-    color: #1f3a32;
-    font-size: 38px;
-}
-
-.menu-subtitle {
-    margin: 8px 0 0;
-    color: #6d756f;
-    font-size: 15px;
-}
-
-.dish-container {
+.menu-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
-}
-
-.no-dishes {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 50px;
-    color: #777;
-}
-
-.order-total {
-    margin-top: 35px;
-    padding: 20px 25px;
-    background: #fffdf7;
-    border: 1px solid #e5dcc8;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 5px 18px rgba(31, 58, 50, 0.08);
-}
-
-.order-total span {
-    color: #6d756f;
-    font-size: 14px;
-}
-
-.order-total h2 {
-    margin: 5px 0 0;
-    color: #1f3a32;
-}
-
-.checkout-button {
-    padding: 13px 25px;
-    border: none;
-    border-radius: 9px;
-    background: #d4a72c;
-    color: #1f3a32;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.checkout-button:hover:not(:disabled) {
-    background: #e5b936;
-    transform: translateY(-2px);
-}
-
-.checkout-button:disabled {
-    background: #d8d4ca;
-    color: #888;
-    cursor: not-allowed;
-}
-
-@media (max-width: 1000px) {
-    .dish-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 650px) {
-    .menu {
-        padding: 20px;
-    }
-
-    .menu h1 {
-        font-size: 30px;
-    }
-
-    .dish-container {
-        grid-template-columns: 1fr;
-    }
-
-    .order-total {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 15px;
-    }
-
-    .checkout-button {
-        width: 100%;
-    }
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    align-items: stretch;
 }

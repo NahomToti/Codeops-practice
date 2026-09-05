@@ -1,19 +1,13 @@
-import "./Main.css";
-import Menu from "./Menu/Menu";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import CartProvider from "./cart/CartProvider.jsx";
+import "./index.css";
 
-function Main() {
-  return (
-    <main className="main">
-      <section className="content">
-        <div className="content-header">
-          <h2>Our Ethiopian Menu</h2>
-          <p>Enjoy delicious traditional Ethiopian dishes</p>
-        </div>
-
-        <Menu />
-      </section>
-    </main>
-  );
-}
-
-export default Main;
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <CartProvider>
+      <App />
+    </CartProvider>
+  </StrictMode>
+);
